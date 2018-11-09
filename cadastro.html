@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <title>A Simple Form</title>
+</head>
+<body>
+  <div class="formCadastro">
+    <form id="_forExercicio2" method="post" action="">
+      <h1 class="tituloForm">A Simple Form</h1>
+      <h2 class="subTituloForm">Form Fundamentals</h2>
+
+      <fieldset>
+        <legend>Customer Info</legend>
+        <label for="_Name">Name:</label>
+        <input type="text" id="_Name" placeholder="Digite o nome"/><br>
+        <label for="_Telefone">Telefone:</label>
+        <input id="_Telefone"  required pattern="\\(d{2}\)d{5}-?\d{3}" placeholder="(51)99999-99999"/><br>
+        <label for="_Email">E-mail address:</label>
+        <input id="_Email" type="email" placeholder="nome@email.com"/><br>
+      </fieldset>
+      <fieldset>
+        <legend>Books</legend>
+        <input id="Book"/>
+     <!-- Quantity (Maximum 5): <input id="txtQtde" type="range" min="1" max="5" step="1" /-->
+        <label for="_NumberBooks">Quantity (Maximum 5):</label>
+        <input id="_NumberBooks" type="number" min="1" max="5" step="1" />
+      </fieldset>
+      <input type="submit" id="txtSalvar"/>
+    </form>
+    <footer>
+      <small><i class="far fa-copyright"></i> Copyright 2018, Just In Time Consulting</small>
+    </footer>
+  </div>
+</body>
+</html>
