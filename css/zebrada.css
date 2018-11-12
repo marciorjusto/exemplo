@@ -1,0 +1,21 @@
+/*Exemplos styles CSS*/
+
+/* 12/11/2018 */
+#col-cientista {
+  width: 30%;
+}
+#col-frase {
+  width: 70%;
+}
+td {
+  text-align: center;
+  font: 13px verdana;
+}
+tr {
+  text-align: center;
+  font: 13px verdana;
+}
+tr:nth-child(odd) {
+    color: #FFFFFF;
+    background-color: #0099cc;
+}
