@@ -1,0 +1,25 @@
+body {
+    font-family: "Verdana", Times, serif;
+}
+
+.container {
+    border: black solid;
+    width: 650px;
+    height: 400px;
+}
+
+.divTest {
+    width: 30px;
+    height: 15px;
+    margin: 2%;
+    padding: 2%;
+    background: #0f7a80;
+    position: relative;
+}
+
+.divTest:hover {
+  transform: scale(2);
+  transition: All 1s ease;
+  opacity: 0.5;
+/*  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
