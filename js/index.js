@@ -1,20 +1,83 @@
+/*
+ * @author Marcio Ribeiro Justo
+ * Exercício
+ * Construa algoritimo em JavaScript que calcula a média de 10 alunos. Use um dos três tipos de laços de repetição
+ *
+ */
+function qualMedia() {
+  var _MediasAlunos = [80,85,75,85,65,80,85,100,90,85];
+  var _soma = 0;
+  for (var i=0; i < 10; i++) {
+    _soma = _soma + _MediasAlunos[i];
+  }
+  return _soma/10;
+}
 
 
 /*
-* @author Cássio Trindade
-* Exemplo de comentario de várias linhas
-*
-*/
+ * @author Marcio Ribeiro Justo
+ * Exercício
+ * Construa um algoritimo em JavaScript que pergunta se um individuo é masculino ou feminino e mostra o resultado.
+ *
+ */
+function qualSexo(p_sexo) {
+  if (p_sexo == 'M') {
+     alert("É homem!");
+  } else {
+     alert("É mulher!");
+  }
 
+}
+
+/*
+ * @author Marcio Ribeiro Justo
+ * Exemplo de estrutura de seleção
+ *
+ */
+function exemplo2() {
+    var DiaSemana = new Date();
+    DiaSemana = DiaSemana.getDay();
+
+    switch (DiaSemana) {
+        case 1:
+            alert(" Segunda-feira ");
+            break;
+        case 2:
+            alert(" Terça-feira ");
+            break;
+        case 3:
+            alert(" Quarta-feira ");
+            break;
+        case 4:
+            alert(" Quinta-feira ");
+            break;
+        case 5:
+            alert(" Sexta-feira ");
+            break;
+        case 6:
+        case 7:
+            alert(" Fim de semana ");
+            break;
+        default:
+            alert(" Dia inexistente ");
+    }
+}
+
+/*
+ * @author Cássio Trindade
+ * Exemplo de comentario de várias linhas
+ *
+ */
 function exemplo(){
     const NOME = "DESSA FUÇÃO"
     let parcela1 = 23;
     let parcela2 = 33;
     let soma = parcela1 + parcela2;
     console.log(soma);
-
-
 }
+
+
+
 /*var exibeMensagem = function() {
     mensagem = "MANTRA";
     console.log(mensagem);
