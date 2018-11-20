@@ -1,5 +1,69 @@
 /*
  * @author Marcio Ribeiro Justo
+ * DOM - Document Object Model
+ */
+//var myVar = setInterval(criaParagrafo, 1000);
+
+function criaImagem() {
+    var objNovaImg = document.createElement('img');
+    objNovaImg.src = "../images/img0.png";
+    objNovaImg.style.width = "100px";
+    objNovaImg.style.height = "100px";
+
+    document.getElementById('pindice2').appendChild(objNovaImg);
+}
+
+function criaParagrafo() {
+  var objNovoParagrafo = document.createElement('p');
+  var strTexto = document.createTextNode('Informação do parágrafo');
+
+  objNovoParagrafo.appendChild(strTexto);
+  document.getElementById('pindice').appendChild(objNovoParagrafo);
+}
+
+/*
+ * @author Marcio Ribeiro Justo
+ * Exercício
+ * Construa um array vazio e atribua a ele imagens até obter uma pilha de cinco elementos.
+ *
+ */
+function exerArray() {
+    var imgs = new Array("img0","img1","img2","img3","img4");
+
+    for (key in imgs) {
+       document.getElementById("sprite" + key).src = "../images/" + imgs[key] + ".png";
+       document.getElementById("sprite" + key).style.width = "100px";
+       document.getElementById("sprite" + key).style.height = "100px";
+    }
+
+    // Exibe
+    /*
+    for (var i=0; i < imgs.length; i++) {
+       //document.write( "<img id='img" + i + "' src='../images/" + imgs[i] + ".png' width=100px height=100px>");
+       document.getElementById("sprite" + i).src = "../images/" + imgs[i] + ".png";
+       document.getElementById("sprite" + i).style.width = "100px";
+       document.getElementById("sprite" + i).style.height = "100px";
+    }*/
+}
+
+/*
+function exerArrayProf() {
+    var imgs = new Array(items:"img0","img1","img2","img3","img4");
+
+    for (key in imgs) {
+        var numero = parseInt(key) + parseInt(s:1);
+        console.log(numero);
+        var ele = "img" + numero;
+        console.log(ele);
+        document.getElementById("sprite" + numero).src = "../images/" + imgs[key] + ".png";
+        document.getElementById("sprite" + numero).style.width = "100px";
+        document.getElementById("sprite" + numero).style.height = "100px";
+    }
+}
+*/
+
+/*
+ * @author Marcio Ribeiro Justo
  * Exercício
  * Construa algoritimo em JavaScript que calcula a média de 10 alunos. Use um dos três tipos de laços de repetição
  *
