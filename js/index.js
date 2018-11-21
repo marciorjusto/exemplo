@@ -1,4 +1,21 @@
 /*
+* @author Marcio Ribeiro Justo
+* @date 21/11/2018
+*/
+function verificaUsuario() {
+    var nome = document.getElementById("_nome").value;
+    var tipo = document.getElementById("_tipo");
+    var tipoSel = tipo.selectedIndex;
+    var valorTipoSel = tipo[tipoSel].value;
+
+    alert('O usuário selecionado é ' + nome + ', do tipo ' + valorTipoSel);
+}
+
+function alteraCampoLabel() {
+  document.getElementById("novoTexto").innerHTML = 'ABC';
+}
+
+/*
  * @author Marcio Ribeiro Justo
  * DOM - Document Object Model
  */

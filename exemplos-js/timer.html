@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo JS 01</title>
+  <script src="../js/index.js"></script>
+</head>
+<body>
+  <p id="demo"></p>
+  <button onClick="myStopFunction()">Stop time</button>
+  <script type="text/javascript">
+     var myVar = setInterval(function () { myTimer() }, 1000);
+
+     function myTimer() {
+        var d = new Date();
+        var t = d.toLocaleTimeString();
+        document.getElementById("demo").innerHTML =
+            document.getElementById("demo").innerHTML +
+            t + "<marquee>FIM</marquee>";
+     }
+     function myStopFunction() {
+         clearInterval(myVar);
+     }
+  </script>
+</body>
+</html>
